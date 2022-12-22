@@ -93,7 +93,8 @@ export default async function productCreator(
           query: CREATE_PRODUCTS_MUTATION,
           variables: {
             input: {
-              title: `${randomTitle()}`,
+              title: 'Web Bakery Generated Product Title',
+              // title: `${randomTitle()}`,
               variants: [{ price: randomPrice() }],
             },
           },
